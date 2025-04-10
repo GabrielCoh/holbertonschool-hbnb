@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const loginForm = document.getElementById('login-form');
 
-    if (loginForm) {
+    if (window.location.pathname.includes('place_detail.html')) {
         loginForm.addEventListener('submit', async (event) => {
             event.preventDefault();
 
